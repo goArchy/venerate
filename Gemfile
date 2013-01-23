@@ -27,6 +27,7 @@ group :test do
   gem 'factory_girl'
   gem 'faker'
   gem 'launchy'
+  gem 'email_spec'
 end
 
 gem 'haml'
