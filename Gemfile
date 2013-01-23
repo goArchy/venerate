@@ -20,7 +20,6 @@ gem 'jquery-rails'
 group :test do
 #  gem 'spinach-rails'
   gem 'cucumber-rails'
-  gem 'sqlite3', '1.3.5'
   gem 'database_cleaner', '0.7.2'
   gem 'rspec-rails'
   gem "capybara"
