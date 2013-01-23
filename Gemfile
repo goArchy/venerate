@@ -35,17 +35,6 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'pg_search'
 gem "twitter-bootstrap-rails", '2.1.3'
-#gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
-gem "paperclip"
-gem 'acts-as-taggable-on'
-#gem 'acts_as_list'
-gem 'acts_as_list', :git => "git://github.com/swanandp/acts_as_list.git"
-gem 'faraday'
-gem 'koala', '> 1.1.0'
-gem 'hpricot'
-gem 'ruby-oembed'
-#gem 'ruby-aws'
-gem 'amazon-ecs'
 
 gem 'event-calendar', :require => 'event_calendar'
 gem 'jquery_datepicker'
