@@ -2,40 +2,43 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.2.3'
 gem 'pg'
+gem 'haml'
+gem 'sass'
+gem 'devise'
+gem 'heroku'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-  gem 'compass'
-  gem 'compass-rails'
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-#  gem 'therubyracer', :platform => :ruby
-  gem 'uglifier', '>= 1.0.3'
-  gem 'execjs'
+  gem 'jquery-rails'
   gem 'jquery-ui-rails'
+  gem 'compass-rails'
+  gem 'therubyracer'
+  gem 'bootstrap-sass-rails'
+  gem 'uglifier'
 end
 
-gem 'jquery-rails'
 
 group :test do
-#  gem 'spinach-rails'
-  gem 'cucumber-rails'
   gem 'database_cleaner', '0.7.2'
-  gem 'rspec-rails'
   gem "capybara"
-  gem 'ruby-debug19', :require => 'ruby-debug'
-  gem 'factory_girl'
+  gem 'factory_girl_rails'
   gem 'faker'
   gem 'launchy'
   gem 'email_spec'
 end
 
-gem 'haml'
-gem 'devise'
-gem 'omniauth'
-gem 'omniauth-facebook'
-gem 'pg_search'
-gem "twitter-bootstrap-rails", '2.1.3'
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'spinach-rails'
+  gem 'sqlite3'
+  gem 'pry'#, '~> 0.9.9.6'
+  gem 'pry-rails'
+  gem 'capistrano'
+  gem 'interactive_editor'
+  gem 'faker'
+  gem 'rails_best_practices'
+end
 
 gem 'event-calendar', :require => 'event_calendar'
 gem 'jquery_datepicker'
