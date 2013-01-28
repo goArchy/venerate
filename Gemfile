@@ -20,6 +20,7 @@ end
 
 
 group :test do
+  gem 'cucumber-rails'
   gem 'database_cleaner', '0.7.2'
   gem "capybara"
   gem 'factory_girl_rails'
@@ -30,7 +31,6 @@ end
 
 group :development, :test do
   gem 'rspec-rails'
-  gem 'spinach-rails'
   gem 'sqlite3'
   gem 'pry'#, '~> 0.9.9.6'
   gem 'pry-rails'
