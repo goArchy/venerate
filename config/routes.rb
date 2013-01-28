@@ -1,12 +1,12 @@
 Venerate::Application.routes.draw do
-  root :to => "home#index"
+
   devise_for :users
 
-  get "static_pages/home"
+  authenticated :user do
+    root :to => "home#index"
+  end
 
-  get "static_pages/about"
-
-  get "static_pages/contact"
+  root :to => "home#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
